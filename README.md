@@ -23,7 +23,7 @@ Ezhad Eminuddin: Lead Developer
 
 Ridhwan Irfan (trojanhammer): Assistant Developer
 
-Izzmir Danish(jemayz) : Junior Developer
+Izzmir Danish (jemayz) : Senior Developer
 
 # Copyright and Licensing
 
