@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mahallah Ali Login</title>
+    <link rel="icon" href="images/mahallah_ali.png" type="image/x-icon" />
+    <link rel="stylesheet" href="styleLogin.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav>
+      <img id="background-image" src="images/bg_Ali.png" alt="bg_Ali" />
+      <div id="container">
+        <div id="login_bg">
+          <div id="logos_bg">
+            <div id="logos">
+              <img src="images/mahallah_ali.png" alt="mahallah_ali" />
+              <img src="images/ali_lion.png" alt="ali_lion" />
+              <img src="images/iium.png" alt="iium" />
+            </div>
+          </div>
+
+          <div id="events">
+            <h1>MAHALLAH ALI</h1>
+            <h2>محلة علي</h2>
+            <label for="name">Username:</label>
+            <input type="text" id="name" name="name" required /><br />
+            <label for="password">Password:</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              required
+            /><br />
+
+            <button id="login">LOG IN</button>
+            <script>
+              $(document).ready(function () {
+                $("#login").click(function () {
+                  // Get the values from the input fields
+                  var username = $("#name").val();
+                  var password = $("#password").val();
+
+                  // Check if both username and password are filled in
+                  if (username && password) {
+                    // If both fields are filled, redirect to main_page.html
+                    window.location.href = "main_page.html";
+                  } else {
+                    // If either field is empty, show an alert
+                    alert("Please fill in both username and password.");
+                  }
+                });
+                $("#login").click(function () {
+                  alert("Clicked");
+                });
+              });
+            </script>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </body>
+</html>

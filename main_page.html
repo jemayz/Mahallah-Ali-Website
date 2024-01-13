@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mahallah Ali</title>
+    <link rel="stylesheet" href="styleMainPage.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      src="scriptMainPage.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+  </head>
+  <header></header>
+  <body>
+    <main id="container">
+      <img id="bg_image" src="images/bg_Ali2.jpg" alt="bg_Ali2" />
+
+      <div id="upperBg">
+        <div id="upperBar">
+          <div id="navBar">
+            <div class="navBtn" id="about_us">
+              <img src="images/about_us.png" alt="about_us" />
+              <label for="about_us">About Us</label>
+            </div>
+            <div class="navBtn">
+              <img
+                id="activities"
+                src="images/activities.png"
+                alt="activities"
+              />
+              <label for="activities">Activities</label>
+            </div>
+            <div class="navBtn">
+              <img
+                id="facilities"
+                src="images/facilities.png"
+                alt="facilities"
+              />
+              <label for="facilities">Facilities</label>
+            </div>
+            <div class="navBtn">
+              <img id="rooms" src="images/rooms.png" alt="rooms" />
+              <label for="rooms">Rooms</label>
+            </div>
+          </div>
+          <h1>MAHALLAH ALI</h1>
+          <div id="upperImg">
+            <img src="images/mahallah_ali.png" alt="mahallah_ali" />
+            <img src="images/ali_lion.png" alt="ali_lion" />
+            <img id="logout" src="images/logout.png" alt="logout" />
+          </div>
+        </div>
+
+        <div id="hiddenAboutUs" class="hiddenContent">
+          <div>
+            <button class="colorChangeBtn" id="organization">
+              Organization
+            </button>
+            <div class="hiddenButtons">
+              <button id="committee" class="hiddenOrg">Committee</button>
+              <button id="fellow" class="hiddenOrg">Fellow</button>
+            </div>
+          </div>
+          <div>
+            <button class="colorChangeBtn" id="location">Location</button>
+            <div class="hiddenButtons">
+              <button id="gMap" class="hiddenLocation">Google-Map</button>
+              <button id="layout" class="hiddenLocation">Layout</button>
+            </div>
+          </div>
+        </div>
+
+        <div id="hiddenActivities" class="hiddenContent">
+          <div>
+            <button id="session">Session</button>
+            <div class="hiddenButtons">
+              <button id="21_22" class="hiddenSession">2021/2022</button>
+              <button id="22_23" class="hiddenSession">2022/2023</button>
+            </div>
+          </div>
+        </div>
+
+        <div id="hiddenFacilities" class="hiddenContent">
+          <button class="colorChangeBtn" id="cafeteria">Cafeteria</button>
+          <button class="colorChangeBtn" id="block">Block</button>
+          <button class="colorChangeBtn" id="others">Others</button>
+        </div>
+
+        <div id="hiddenRooms" class="hiddenContent">
+          <button class="colorChangeBtn" id="reservation">Reservation</button>
+          <button class="colorChangeBtn" id="LIDV">LIDV</button>
+        </div>
+      </div>
+
+      <div id="mainContent">
+        <img
+          id="layoutAli"
+          class="aboutUsPage"
+          src="images/layoutAli.png"
+          alt="layoutAli"
+        />
+
+        <img
+          id="fellowAli"
+          class="aboutUsPage"
+          src="images/fellow.png"
+          alt="fellowAli"
+        />
+        <img
+          id="committeeAli"
+          class="aboutUsPage"
+          src="images/committee.png"
+          alt="fellowAli"
+        />
+        <iframe
+          class="aboutUsPage"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4901.462349224605!2d101.73624664172489!3d3.2476451834250466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc38e9bb77f819%3A0x5c2058733b8d90f1!2sMahallah%20Ali%20Abi%20Talib!5e1!3m2!1sen!2smy!4v1704975960408!5m2!1sen!2smy"
+          width="1000"
+          height="500"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+
+        <div id="fotorama1" data-autoplay="true">
+          <label for="eventS1P1"
+            >Forum: Science In Quran<img
+              id="eventS1P1"
+              class="sessionPage"
+              src="images/Forum_Science_In_Quran.jpg"
+              alt="Forum_Science_In_Quran"
+          /></label>
+
+          <label for="eventS1P2"
+            >Bubur Lambuk Distribution<img
+              id="eventS1P2"
+              class="sessionPage"
+              src="images/Bubur_Lambuk_Distrubtion.jpg"
+              alt="Bubur_Lambuk_Distrubtion"
+          /></label>
+
+          <label for="eventS1P3"
+            >Mega Bersih Musolla Ali<img
+              id="eventS1P3"
+              class="sessionPage"
+              src="images/Mega Bersih Musolla Ali.png"
+              alt="Mega Bersih Musolla Ali"
+          /></label>
+        </div>
+
+        <div id="fotorama2" data-autoplay="true">
+          <label for="eventS2P1"
+            >MCLEAD 2022 Day 1<img
+              id="eventS2P1"
+              class="sessionPage"
+              src="images/MCLEAD_2022_Day_1.jpg"
+              alt="MCLEAD_2022_Day_1"
+          /></label>
+
+          <label for="eventS2P2"
+            >MCLEAD 2022 Day 2<img
+              id="eventS2P2"
+              class="sessionPage"
+              src="images/MCLEAD_2022_Day_2.jpg"
+              alt="MCLEAD_2022_Day_2"
+          /></label>
+
+          <label for="eventS2P3"
+            >MCLEAD 2022 Day 3<img
+              id="eventS2P3"
+              class="sessionPage"
+              src="images/MCLEAD_2022_Day_3.jpg"
+              alt="MCLEAD_2022_Day_3"
+          /></label>
+        </div>
+
+        <div id="fotorama3" data-autoplay="true">
+          <label for="Cafe1"
+            ><h4>Rasa Nusantara</h4>
+            <img
+              id="Cafe1"
+              class="cafeteriapage"
+              src="images/nusantara.jpg"
+              alt="Cafe1"
+          /></label>
+          <label for="Cafe2">
+            <h4>Zain Alsham</h4>
+            <img
+              id="Cafe2"
+              class="cafeteriapage"
+              src="images/zainalsham.jpg"
+              alt="Cafe2"
+          /></label>
+          <label for="Cafe3"
+            ><h4>Western</h4>
+            <img
+              id="Cafe3"
+              class="cafeteriapage"
+              src="images/western.jpg"
+              alt="Cafe3"
+          /></label>
+          <label for="Cafe4"
+            ><h4>Beverage</h4>
+            <img
+              id="Cafe4"
+              class="cafeteriapage"
+              src="images/beverage.jpg"
+              alt="Cafe4"
+          /></label>
+          <label for="Cafe5"
+            ><h4>Nasi Berlauk</h4>
+            <img
+              id="Cafe5"
+              class="cafeteriapage"
+              src="images/nasiberlauk.jpg"
+              alt="Cafe5"
+          /></label>
+          <label for="Cafe6"
+            ><h4>Interior Design</h4>
+            <img
+              id="Cafe6"
+              class="cafeteriapage"
+              src="images/interiordesign.jpg"
+              alt="Cafe6"
+          /></label>
+        </div>
+        <div id="fotorama4" data-autoplay="true">
+          <label for="Block_A"
+            ><h4>Block A</h4>
+            <img
+              id="Block_A"
+              class="blockPage"
+              src="/images/Block_A.jpg"
+              alt="Block A"
+          /></label>
+          <label for="Block_B"
+            ><h4>Block B</h4>
+            <img
+              id="Block_B"
+              class="blockPage"
+              src="/images/Block_B.jpg"
+              alt="Block B"
+          /></label>
+          <label for="Block_C"
+            ><h4>Block C</h4>
+            <img
+              id="Block_C"
+              class="blockPage"
+              src="/images/Block_C.jpg"
+              alt="Block C"
+          /></label>
+          <label for="Block_D"
+            ><h4>Block D</h4>
+            <img
+              id="Block_D"
+              class="blockPage"
+              src="/images/Block_D.jpg"
+              alt="Block D"
+          /></label>
+          <label for="Block_E"
+            ><h4>Block E</h4>
+            <img
+              id="Block_E"
+              class="blockPage"
+              src="/images/Block_E.jpg"
+              alt="Block E"
+          /></label>
+          <label for="Block_F"
+            ><h4>Block F</h4>
+            <img
+              id="Block_F"
+              class="blockPage"
+              src="/images/Block_F.jpg"
+              alt="Block F"
+          /></label>
+          <label for="Block_G"
+            ><h4>Block G</h4>
+            <img
+              id="Block_G"
+              class="blockPage"
+              src="/images/Block_G.jpg"
+              alt="Block G"
+          /></label>
+          <label for="Block_PG"
+            ><h4>Block PG</h4>
+            <img
+              id="Block_PG"
+              class="blockPage"
+              src="/images/Block_PG.jpg"
+              alt="Block PG"
+          /></label>
+        </div>
+        <div id="fotorama5" data-autoplay="true">
+          <label for="others1"
+            ><h4>Court 1</h4>
+            <img
+              id="others1"
+              class="othersPage"
+              src="images/court_1.jpg"
+              alt="others1"
+          /></label>
+
+          <label for="others2"
+            ><h4>Laundry</h4>
+            <img
+              id="others2"
+              class="othersPage"
+              src="images/laundry.jpg"
+              alt="others2"
+          /></label>
+          <label for="others3"
+            ><h4>Mini Market</h4>
+            <img
+              id="others3"
+              class="othersPage"
+              src="images/mini_market.jpg"
+              alt="others3"
+          /></label>
+          <label for="others4"
+            ><h4>Court 2</h4>
+            <img
+              id="others4"
+              class="othersPage"
+              src="images/court_2.jpg"
+              alt="others4"
+          /></label>
+          <label for="others5"
+            ><h4>Musolla</h4>
+            Musolla<img
+              id="others5"
+              class="othersPage"
+              src="images/musolla.jpg"
+              alt="others5"
+          /></label>
+        </div>
+
+        <div id="reservationForm">
+          <div class="inputLine" id="line1">
+            <label for="name">Name:</label>
+            <input type="text" class="Name" id="Name" name="Name" required />
+          </div>
+
+          <div class="inputLine" id="line2">
+            <label for="IC">IC No.:</label>
+            <input type="number" class="icNo" id="icNo" name="icNo" required />
+            <label for="MaticNo">Matric No.:</label>
+            <input
+              type="number"
+              class="matricNo"
+              id="matricNo"
+              name="matricNo"
+              required
+            />
+          </div>
+          <div class="inputLine" id="line3">
+            <label for="block">Block:</label>
+            <select class="block" id="block" name="block" required>
+              <option value="A">A</option>
+              <option value="B">B</option>
+              <option value="C">C</option>
+              <option value="D">D</option>
+              <option value="E">E</option>
+              <option value="F">F</option>
+              <option value="G">G</option>
+              <option value="PG">PG</option>
+            </select>
+            <label for="room">Room:</label>
+            <select class="room" id="roomReservation" name="room" required>
+              <!-- Use jQuery to generate options from 1.1 to 4.8 -->
+              <script>
+                $(document).ready(function () {
+                  for (let floor = 1; floor <= 4; floor++) {
+                    for (let roomNo = 1; roomNo <= 8; roomNo++) {
+                      // Exclude 1.9, 2.9, and 3.9
+                      if (
+                        !(floor === 1 && roomNo === 9) &&
+                        !(floor === 2 && roomNo === 9) &&
+                        !(floor === 3 && roomNo === 9)
+                      ) {
+                        $("#roomReservation").append(
+                          `<option value='${floor}.${roomNo}'>${floor}.${roomNo}</option>`
+                        );
+                      }
+                    }
+                  }
+                });
+              </script>
+            </select>
+            <label for="compartment">Compartment:</label>
+            <select
+              class="compartment"
+              id="Compartment"
+              name="compartment"
+              required
+            >
+              <option value="A">A</option>
+              <option value="B">B</option>
+              <option value="C">C</option>
+              <option value="D">D</option>
+            </select>
+          </div>
+          <div class="inputLine" id="line4">
+            <label for="semester">Semester:</label>
+            <input
+              type="number"
+              min="1"
+              max="3"
+              id="semester"
+              name="semester"
+              required
+            />
+            <label for="year">Year:</label>
+            <input type="text" id="year" name="year" required />
+          </div>
+          <button class="reserveButton1">RESERVE</button>
+        </div>
+        <div id="LIDVForm">
+          <div class="inputLine" id="line1">
+            <label for="name">Name:</label>
+            <input type="text" class="Name" id="Name" name="Name" required />
+          </div>
+
+          <div class="inputLine" id="line2">
+            <label for="IC">IC No.:</label>
+            <input type="number" class="icNo" id="icNo" name="icNo" required />
+            <label for="MaticNo">Matric No.:</label>
+            <input
+              type="number"
+              class="matricNo"
+              id="matricNo"
+              name="matricNo"
+              required
+            />
+          </div>
+          <div class="inputLine" id="line3">
+            <label for="block">Block:</label>
+            <select class="block" id="block" name="block" required>
+              <option value="A">A</option>
+              <option value="B">B</option>
+              <option value="C">C</option>
+              <option value="D">D</option>
+              <option value="E">E</option>
+              <option value="F">F</option>
+              <option value="G">G</option>
+              <option value="PG">PG</option>
+            </select>
+            <label for="room">Room:</label>
+            <select class="room" id="roomLIDV" name="room" required>
+              <!-- Use jQuery to generate options from 1.1 to 4.8 -->
+              <script>
+                $(document).ready(function () {
+                  for (let floor = 1; floor <= 4; floor++) {
+                    for (let roomNo = 1; roomNo <= 8; roomNo++) {
+                      // Exclude 1.9, 2.9, and 3.9
+                      if (
+                        !(floor === 1 && roomNo === 9) &&
+                        !(floor === 2 && roomNo === 9) &&
+                        !(floor === 3 && roomNo === 9)
+                      ) {
+                        $("#roomLIDV").append(
+                          `<option value='${floor}.${roomNo}'>${floor}.${roomNo}</option>`
+                        );
+                      }
+                    }
+                  }
+                });
+              </script>
+            </select>
+            <label for="compartment">Compartment:</label>
+            <select
+              class="compartment"
+              id="Compartment"
+              name="compartment"
+              required
+            >
+              <option value="A">A</option>
+              <option value="B">B</option>
+              <option value="C">C</option>
+              <option value="D">D</option>
+            </select>
+          </div>
+          <div class="inputLine" id="line4">
+            <label for="CheckIn">Check-In:</label>
+            <input type="date" id="CheckIn" name="CheckIn" required />
+            <label for="CheckOut">Check-Out:</label>
+            <input type="date" id="CheckOut" name="CheckOut" required />
+          </div>
+          <button class="reserveButton2">RESERVE</button>
+        </div>
+      </div>
+    </main>
+    <script src="scriptMainPage.js"></script>
+    <script src="scriptToLink.js"></script>
+  </body>
+</html>

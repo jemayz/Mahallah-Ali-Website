@@ -1,0 +1,326 @@
+body {
+  margin: 0;
+}
+#bg_image {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  opacity: 50%;
+  margin: 0;
+  position: relative;
+}
+#container {
+  background-color: #6f6f6f;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  top: 0;
+  left: 0;
+}
+#upperBg {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: rgba(67, 67, 67, 0.7);
+  width: 97.2vw;
+  height: 10vh;
+  padding-top: 20px;
+  padding-bottom: 60px;
+  padding-left: 40px;
+  position: absolute;
+  margin: 0;
+  z-index: 10;
+}
+#upperBar {
+  background-color: #f4f2f2;
+  width: 90%;
+
+  height: 65px;
+  border-radius: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+#upperBar h1 {
+  font-size: 40px;
+}
+
+#upperImg {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 50px;
+  margin-right: 20px;
+}
+#upperImg img:not(:nth-child(3)) {
+  width: 70px;
+}
+#upperImg img:nth-child(3) {
+  width: 40px;
+  height: 50px;
+}
+#navBar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffcd82;
+  width: 30%;
+  height: 50px;
+  border-radius: 20px;
+  border: 2px solid #434343;
+  padding-top: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+#navBar img {
+  width: 25px;
+  margin-top: 5px;
+}
+.navBtn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 48%;
+}
+
+.navBtn:hover {
+  opacity: 0.5;
+  cursor: pointer;
+  transform: translateX(-10);
+}
+
+.navBtn label,
+img {
+  margin-bottom: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+#logout:hover {
+  opacity: 30%;
+}
+#hiddenAboutUs,
+#hiddenActivities,
+#hiddenFacilities,
+#hiddenRooms {
+  align-items: flex-start;
+  text-align: left; /* Align the text to the left for buttons inside hiddenContent */
+  margin-left: 10px; /* Adjust the margin as needed */
+  display: none;
+}
+
+#hiddenAboutUs {
+  text-align: left; /* Align the text to the left for buttons inside hiddenContent */
+  margin-left: 10px; /* Adjust the margin as needed */
+  display: flex;
+  flex-direction: row;
+}
+.hiddenOrg {
+  display: none;
+}
+.hiddenLocation {
+  display: none;
+}
+.hiddenSession {
+  display: none;
+}
+
+.hiddenContent {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.hiddenContent button {
+  align-items: center;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border: none;
+  color: #434343;
+}
+.hiddenContent button:hover {
+  cursor: pointer;
+  background-color: #ffcd99;
+}
+
+/* .colorChangeBtn:active {
+  background-color: #ffcd82;
+} */
+
+.hiddenButtons {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+#mainContent {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  position: absolute;
+}
+
+.aboutUsPage,
+.sessionPage {
+  display: none;
+}
+
+#layoutAli {
+  width: 500px;
+  margin-bottom: 50px;
+}
+
+#committeeAli {
+  width: 550px;
+  margin-bottom: 50px;
+}
+
+#fellowAli {
+  width: 800px;
+  margin-bottom: 50px;
+}
+
+iframe {
+  border: 2px solid #434343;
+  border-radius: 10px;
+  margin-bottom: 40px;
+}
+#eventS1P1,
+#eventS1P2,
+#eventS1P3,
+#eventS2P1,
+#eventS2P2,
+#eventS2P3 {
+  width: 500px;
+  margin-bottom: 50px;
+}
+#reservationForm,
+#LIDVForm {
+  background-color: #434343;
+  opacity: 80%;
+  color: #f4f2f2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  display: none;
+  margin-bottom: 100px;
+  height: 400px;
+  width: 600px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.inputLine {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+input {
+  height: 20px;
+  margin: 5px;
+  margin-right: 30px;
+  color: #f4f2f2;
+  background-color: #6f6f6f;
+  justify-content: space-between;
+}
+
+#Name {
+  width: 500px;
+}
+label {
+  margin-left: 30px;
+}
+.block,
+.room,
+.compartment {
+  width: 60px;
+}
+
+.icNo,
+.matricNo {
+  width: 150px;
+}
+.reserveButton1,
+.reserveButton2 {
+  background-color: #ffcd82;
+  color: black;
+  font-weight: bold;
+  font-size: large;
+  margin-left: 180px;
+  margin-top: 70px;
+  border: none;
+  border-radius: 20px;
+  padding: 10px;
+  width: 250px;
+}
+.reserveButton1:hover,
+.reserveButton2:hover {
+  background-color: #f1f1f1;
+  color: #565656;
+}
+#fotorama1,
+#fotorama2,
+#fotorama3,
+#fotorama4,
+#fotorama5 {
+  display: none;
+  margin-bottom: 20px;
+  flex-direction: column;
+  align-items: center;
+}
+
+select {
+  background-color: #6f6f6f;
+  color: #f1f1f1;
+  margin-right: 30px;
+}
+
+/* Common styling for all fotorama labels */
+
+#fotorama3 h4,
+#fotorama4 h4,
+#fotorama5 h4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px; /* Adjust the gap value as needed */
+  padding: 10px; /* Adjust the padding as needed */
+  border-radius: 10px; /* Add border-radius for rounded corners if desired */
+  background-color: #434343;
+  color: #f4f2f2;
+  font-size: 250%;
+}
+#fotorama1 label,
+#fotorama2 label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px; /* Adjust the gap value as needed */
+  padding: 10px; /* Adjust the padding as needed */
+  border-radius: 10px; /* Add border-radius for rounded corners if desired */
+  color: #f4f2f2;
+  font-size: 200%;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.cafeteriapage,
+.blockPage,
+.othersPage {
+  width: 100% !important;
+  height: 100% !important;
+  border-radius: 8px; /* Add border-radius for rounded corners if desired */
+}

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hotel Website</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script>
+      function toggleHiddenContent(id) {
+        var element = document.getElementById(id);
+        element.style.display =
+          element.style.display === "none" ? "flex" : "none";
+      }
+    </script>
+  </head>
+  <body>
+    <div id="navBar">
+      <button
+        class="navBtn aboutUs"
+        onclick="toggleHiddenContent('hiddenAboutUs')"
+      >
+        <label for="aboutUs">About Us</label>
+        <img src="icons/arrow_down.png" alt="Arrow down icon" />
+      </button>
+
+      <div class="buttonRow">
+        <button
+          class="navBtn org"
+          onclick="toggleHiddenContent('hiddenOrganization')"
+        >
+          <label for="organization">Organization</label>
+          <img src="icons/arrow_down.png" alt="Arrow down icon" />
+        </button>
+        <button
+          class="navBtn location"
+          onclick="toggleHiddenContent('hiddenLocation')"
+        >
+          <label for="location">Location</label>
+          <img src="icons/arrow_down.png" alt="Arrow down icon" />
+        </button>
+      </div>
+
+      <button
+        class="navBtn activities"
+        onclick="toggleHiddenContent('hiddenActivities')"
+      >
+        <label for="activities">Activities</label>
+        <img src="icons/arrow_down.png" alt="Arrow down icon" />
+      </button>
+      <button
+        class="navBtn facilities"
+        onclick="toggleHiddenContent('hiddenFacilities')"
+      >
+        <label for="facilities">Facilities</label>
+        <img src="icons/arrow_down.png" alt="Arrow down icon" />
+      </button>
+      <button class="navBtn rooms" onclick="toggleHiddenContent('hiddenRooms')">
+        <label for="rooms">Rooms</label>
+        <img src="icons/arrow_down.png" alt="Arrow down icon" />
+      </button>
+      <button class="navBtn" id="logout">
+        <label for="logout">Logout</label>
+        <img src="icons/logout.png" alt="Logout icon" />
+      </button>
+    </div>
+
+    <div id="hiddenAboutUs">
+      <button class="hiddenContent">Our Story</button>
+      <button class="hiddenContent">Mission and Vision</button>
+    </div>
+
+    <div id="hiddenOrganization">
+      <button class="hiddenContent">Departments</button>
+      <button class="hiddenContent">Organizational Structure</button>
+    </div>
+
+    <div id="hiddenLocation">
+      <button class="hiddenContent">Countries</button>
+      <button class="hiddenContent">States</button>
+      <button class="hiddenContent">Cities</button>
+    </div>
+
+    <div id="hiddenActivities">
+      <button class="hiddenContent">Indoor</button>
+      <button class="hiddenContent">Outdoor</button>
+    </div>
+
+    <div id="hiddenFacilities">
+      <button class="hiddenContent">Sports</button>
+      <button class="hiddenContent">Pool</button>
+      <button class="hiddenContent">Fitness Center</button>
+    </div>
+
+    <div id="hiddenRooms">
+      <button class="hiddenContent">Suite</button>
+      <button class="hiddenContent">Deluxe</button>
+      <button class="hiddenContent">Premium</button>
+    </div>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #ffebe6;
+      }
+
+      #navBar {
+        background-color: #ffcd99;
+        padding-top: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+
+      #navBar img {
+        width: 25px;
+        margin-top: 5px;
+      }
+    </style>
+  </body>
+</html>
