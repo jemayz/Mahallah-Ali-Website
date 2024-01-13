@@ -20,7 +20,9 @@ Responsive Design: The website is designed to work seamlessly on various devices
 This project was a collaborative effort, and we'd like to acknowledge the contributions of the following individuals:
 
 Ezhad Eminuddin: Lead Developer
+
 Ridhwan Irfan (trojanhammer): Assistant Developer
+
 Izzmir Danish(jemayz) : Junior Developer
 
 # Copyright and Licensing
