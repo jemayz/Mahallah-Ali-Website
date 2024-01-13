@@ -3,10 +3,12 @@ Welcome to the Mahallah Ali website, a platform dedicated to providing informati
 # Project Overview
 The Mahallah Ali website aims to showcase information related to the university dorm block, including facilities, events, and important announcements. It is designed to provide a user-friendly experience for residents and visitors.
 # Features
-Cafeteria Page: Explore different cafes and dining options within Mahallah Ali.
-Block Information: Learn about different blocks, their facilities, and images.
-Other Facilities: Discover various facilities such as courts, laundry, mini markets, and more.
+
+Cafeteria Page: Explore different cafes and dining options within Mahallah Ali.  
+Block Information: Learn about different blocks, their facilities, and images.  
+Other Facilities: Discover various facilities such as courts, laundry, mini markets, and more.  
 Responsive Design: The website is designed to work seamlessly on various devices.
+
 
 # Collaborators
 This project was a collaborative effort, and we'd like to acknowledge the contributions of the following individuals:
