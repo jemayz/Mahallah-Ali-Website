@@ -1,5 +1,4 @@
 # Mahallah-Ali-Website
-#Introduction
 Welcome to the Mahallah Ali website, a platform dedicated to providing information about the university dorm block. This document serves as a guide to help you understand the structure, features, and collaboration details for this project.
 # Project Overview
 The Mahallah Ali website aims to showcase information related to the university dorm block, including facilities, events, and important announcements. It is designed to provide a user-friendly experience for residents and visitors.
